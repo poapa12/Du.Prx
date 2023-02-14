@@ -1,0 +1,86 @@
+body 
+{
+
+    
+    background-color: dimgrey;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .car-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+    }
+    .car-card img {
+      width: 100%;
+    }
+    .car-info {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: green;
+    
+    }
+    
+   
+.banner2 {
+    
+    background-image:url(https://img.freepik.com/free-photo/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products_1258-71346.jpg?w=1380&t=st=1676365373~exp=1676365973~hmac=4946df7d3e18038b4c34d5cdff6fac99110e9e73f27ca2b48162ce1dff43215f);
+  }
+
+.banner {
+    
+    background-image:
+    url(https://www.aboudcar.com/wp-content/uploads/2017/10/GAC_Hyundai-Banner-.jpg );
+ width="400" 
+     height="500"}
+.rob {
+    color: black;
+    text-align: center;
+  
+  }
+    Year{
+        margin-left: 50px;
+    }
+        body{
+         background-image: url("https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");   
+         background-size: cover;
+         background-repeat: no-repeat; 
+        
+    
+}
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #f00;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
