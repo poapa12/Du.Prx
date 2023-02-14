@@ -1,0 +1,195 @@
+<html>
+<head>
+  <title>Robert Shop</title>¨
+
+</head>
+<body>
+
+<link rel="stylesheet" href="lolko.css">
+<script type="text/javascript" src="lolko.js"></script>
+  
+  
+
+
+<div class="banner">
+  <div>
+    <h1 class="rob">Car Auction</h1>
+    <h2 class="rob"> Welcome to our site</h2>
+
+    <ul>
+        <li><a href="#BMW">BMW</a></li> 
+        <li><a href="#Mercedes-Benz">Mercedes-Benz</a></li>
+        <li><a href="#Tesla">Tesla</a></li>
+    </ul>
+  </div>  
+</div>
+    
+  </div>  
+</div>
+   <div class="car-card">
+<section id="BMW">
+    <a href="https://www.bmw.cz/cs/index.html"><img src="https://th.bing.com/th/id/OIP.Rhe46bphvM3ZVC7bEayvpAHaE8?pid=ImgDet&rs=1" alt="BMW"></a>
+    <div class="car-info">
+      <h2>BMW</h2>
+      <p>Model: X5</p>
+      <p>Year: 2020</p>
+      <p>Mileage: 20,000</p>
+      <p class="price">Last Bid: $40,000</p>
+      <label for="Bid">Bid Emount:</label>
+<input type="bid" id="Bid" name="Bid">
+      <button name="button" value="OK" type="button" onclick="hello()">Bid</button>
+    </div>
+  </div>
+  
+  <div class="car-card">
+      <div align="center" >
+   </div>
+   <section id="Mercedes-Benz">
+    <a href="https://www.mercedes-benz.cz/passengercars.html"><img src="https://www.rushlane.com/wp-content/uploads/2019/09/2019-mercedes-c-class-diesel-update-launch-1.jpg" alt="Mercedes-Benz"></a>
+    <div class="car-info">
+      <h2>Mercedes-Benz</h2>
+      <p>Model: C-Class</p>
+      <p>Year: 2019</p>
+      <p>Mileage: 25,000</p>
+      <p class="price">Last Bid: $35,000</p>
+      <label for="Bid">Bid Emount:</label>
+<input type="bid" id="Bid" name="Bid">
+        <button name="button" value="OK" type="button" onclick="hello()">Bid</button>
+    </div>
+  </div>
+
+  <div class="car-card">
+      <div align="center" >
+   </div>
+   <section id="Tesla">
+    <a href="https://www.tesla.com/"><img src="https://th.bing.com/th/id/R.e0136b35b4994804c21124af18d165f3?rik=OgMh53A89bYHKg&pid=ImgRaw&r=0" alt="Tesla"></a>
+    <div class="car-info">
+      <h2>Tesla</h2>
+      <p>Model: Model S</p>
+      <p>Year: 2018</p>
+      <p>Mileage: 30,000</p>
+      <p class="price">Last Bid: $50,000</p>
+      <label for="Bid">Bid Emount:</label>
+<input type="bid" id="Bid" name="Bid">
+       <button name="button" value="OK" type="button" onclick="hello()">Bid</button>
+    </div>
+  </div>
+<div class="banner2">
+  <h2> Sell Your Car</h2>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gambling Wheel</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+  
+      label, input {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="CarName">Name of The Car:</label>
+    <input type="text" id="CarName" name="CarName">
+    <label for="Year">Year Of The Car:</label>
+    <input type="text" id="Year" name="Year">
+    <label for="StartingBid">Starting Bid:</label>
+    <input type="text" id="StartingBid" name="StartingBid">
+    <button class="Bobr" onclick="location.href='https://www.youtube.com/watch?v=77uak6cLUiI'">Sell Car</button>
+    <br>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Gambling Wheel</title>
+  <style>
+    canvas {  
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400"></canvas>
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var context = canvas.getContext("2d");
+    var centerX = canvas.width / 2;
+    var centerY = canvas.height / 2;
+    var radius = 150;
+    var images = [
+    "https://play-lh.googleusercontent.com/wQiHW5YgQhHmSR_60o9l2lypA9Vn2_hxH0l2X6Iin5lEGTbmfhrZnP8bKywoRGKkJl4=w240-h480-rw",
+    "https://cdn.vectorstock.com/i/1000x1000/26/36/100-dollars-sign-icon-usd-currency-symbol-vector-11122636.webp",
+    "https://play-lh.googleusercontent.com/wQiHW5YgQhHmSR_60o9l2lypA9Vn2_hxH0l2X6Iin5lEGTbmfhrZnP8bKywoRGKkJl4=w240-h480-rw",
+    "https://i.redd.it/x49w11jjzm271.jpg",
+    "https://play-lh.googleusercontent.com/wQiHW5YgQhHmSR_60o9l2lypA9Vn2_hxH0l2X6Iin5lEGTbmfhrZnP8bKywoRGKkJl4=w240-h480-rw",
+    "https://cdn.vectorstock.com/i/1000x1000/26/36/100-dollars-sign-icon-usd-currency-symbol-vector-11122636.webp"
+    ];
+    var angles = [0, 60, 120, 180, 240, 300];
+    var angle = 0;
+    var speed = 0;
+    var friction = 0.98;
+    var spinning = false;
+
+    function drawWheel() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      for (var i = 0; i < images.length; i++) {
+        var img = new Image();
+        img.src = images[i];
+        context.save();
+        context.translate(centerX, centerY);
+        context.rotate(toRadians(angles[i]));
+        context.drawImage(img, -50, -150, 100, 100);
+        context.restore();
+      }
+    }
+
+    function toRadians(angle) {
+      return angle * (Math.PI / 180);
+    }
+
+    function spinWheel() {
+      spinning = true;
+      speed = Math.random() * 10 + 5;
+    }
+
+    function update() {
+      if (spinning) {
+        angle += speed;
+        speed *= friction;
+        if (speed < 0.1) {
+          spinning = false;
+        }
+      }
+    }
+
+    function draw() {
+      drawWheel();
+      context.save();
+      context.translate(centerX, centerY);
+      context.rotate(toRadians(angle));
+      context.beginPath();
+      context.moveTo(-10, -150);
+      context.lineTo(10, -150);
+      context.lineTo(0, -170);
+      context.closePath();
+      context.fillStyle = "#000";
+      context.fill();
+      context.restore();
+    }
+
+    function loop() {
+      update();
+      draw();
+      requestAnimationFrame(loop);
+    }
+
+    drawWheel();
+    canvas.addEventListener("click", spinWheel);
+    loop();
+  </script>
+</body>
+</html>
+
